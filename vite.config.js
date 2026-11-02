@@ -1,6 +1,5 @@
-import { defineConfig } from 'vite';
-
+import { defineConfig } from "vite";
 export default defineConfig({
-  // Relative asset URLs work both at a domain root and a GitHub Pages project path.
-  base: './',
+  base: "./",
+  server: { proxy: { "/api": "http://127.0.0.1:3001" } },
 });
