@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="MÂY — Balo cho mỗi hành trình. Khám phá balo đi học, đi làm và du lịch." />
+    <meta name="theme-color" content="#f6f4ee" />
+    <title>MÂY — Balo cho mỗi hành trình</title>
+  </head>
+  <body>
+    <div class="announcement">Giao hàng miễn phí cho đơn từ 800.000₫ <span>•</span> Đồng hành mỗi ngày, đi xa hơn</div>
+    <header class="header">
+      <a class="logo" href="#" aria-label="Mây - Trang chủ">mây<span>®</span></a>
+      <nav aria-label="Điều hướng chính"><a href="#san-pham">Balo</a><a href="#cau-chuyen">Câu chuyện của Mây</a></nav>
+      <button id="open-cart" class="cart-toggle" type="button" aria-label="Mở giỏ hàng">Giỏ hàng <span id="cart-count">0</span></button>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-copy"><p class="eyebrow">CÙNG BẠN, TRÊN MỌI HÀNH TRÌNH</p><h1>Mang điều hay.<br>Đi muôn nơi.</h1><p>Một chiếc balo gọn nhẹ. Một ngày đầy cảm hứng.<br>Để mỗi bước chân đều là một khởi đầu mới.</p><a class="button" href="#san-pham">Khám phá bộ sưu tập <span>→</span></a><div class="hero-footnote"><span>MÂY / 01</span><span>THIẾT KẾ TỐI GIẢN · TIỆN DỤNG MỖI NGÀY</span></div></div>
+        <div class="hero-art"><span class="art-label">THE EVERYDAY COLLECTION</span><div id="hero-bag"></div><span class="hero-sticker">Nhẹ tênh.<br>Đủ đầy.</span><div class="art-caption"><span>Everyday Classic</span><span>Từ 490.000₫</span></div></div>
+      </section>
+      <section class="benefits" aria-label="Cam kết"><div><span>→</span><p>Giao hàng toàn quốc<small>Miễn phí cho đơn từ 800.000₫</small></p></div><div><span>◇</span><p>Chất liệu bền bỉ<small>Chăm chút từng đường may</small></p></div><div><span>↺</span><p>Đổi trả trong 7 ngày<small>Với sản phẩm chưa sử dụng</small></p></div></section>
+      <section class="collection" id="san-pham"><div class="section-heading"><div><p class="eyebrow">TÌM NGƯỜI BẠN ĐỒNG HÀNH</p><h2>Hợp gu. Hợp mọi ngày.</h2></div><p>Đi học, đi làm hay đi thật xa.<br>Luôn có một chiếc Mây dành cho bạn.</p></div><div class="catalog-toolbar"><div class="filters" role="group" aria-label="Lọc theo nhu cầu"><button class="active" data-filter="all" type="button" aria-pressed="true">Tất cả</button><button data-filter="daily" type="button" aria-pressed="false">Hằng ngày</button><button data-filter="school" type="button" aria-pressed="false">Đi học</button><button data-filter="travel" type="button" aria-pressed="false">Du lịch</button></div><label class="search"><span>Tìm kiếm</span><input id="search" type="search" placeholder="Tên balo…" aria-label="Tìm sản phẩm" /></label></div><div id="products" class="products"></div><p id="empty-search" hidden>Chưa tìm thấy balo phù hợp. Bạn thử từ khóa khác nhé.</p></section>
+      <section id="cau-chuyen" class="story"><p class="eyebrow">ÍT HƠN, NHƯNG TỐT HƠN</p><h2>Để hành trang nhẹ hơn.<br>Và trải nghiệm nhiều hơn.</h2><p>Mây bắt đầu từ một ý tưởng đơn giản: một chiếc balo dễ dùng,<br> dễ phối và đủ bền để cùng bạn viết nên những câu chuyện mỗi ngày.</p><a href="#san-pham">Tìm chiếc balo của bạn →</a></section>
+    </main>
+    <footer><a class="logo" href="#">mây<span>®</span></a><p>Mang điều hay. Đi muôn nơi.</p><small>© 2026 Mây. Website mẫu — chưa hỗ trợ đặt hàng và thanh toán thực tế.</small></footer>
+    <dialog id="cart-dialog" aria-labelledby="cart-title"><div class="cart-header"><h2 id="cart-title">Giỏ hàng của bạn</h2><button id="close-cart" class="icon-button" type="button" aria-label="Đóng giỏ hàng">✕</button></div><div id="cart-items"></div><div id="cart-summary"></div></dialog>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
